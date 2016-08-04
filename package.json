@@ -19,7 +19,6 @@
     "node-red-contrib-librato": "3.0.2",
     "node-red-contrib-slack": "0.x",
     "node-red-contrib-particle": "./nodes/node-red-contrib-particle",
-    "node-red-node-mongodb": "^0.x",
     "node-red-node-prowl": "^0.0.4",
     "node-red-node-pusher": "^0.0.3",
     "node-red-node-suncalc": "^0.0.6",
