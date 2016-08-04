@@ -27,6 +27,8 @@ var settings = module.exports = {
     // Add the nodes in
     nodesDir: path.join(__dirname,"nodes"),
 
+    //nodesExcludes:[ '75-exec.js','25-serial.js','28-tail.js','50-file.js','31-tcpin.js','32-udp.js','23-watch.js' ],
+
     // Enable module reinstalls on start-up; this ensures modules installed
     // post-deploy are restored after a restage
     autoInstallModules: true,
