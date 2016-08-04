@@ -27,7 +27,8 @@ var settings = module.exports = {
     // Add the nodes in
     nodesDir: path.join(__dirname,"nodes"),
 
-    //nodesExcludes:[ '36-rpi-gpio.js'],
+    //'36-rpi-gpio.js', 
+    nodesExcludes:[ '25-serial.js'],
 
     // Enable module reinstalls on start-up; this ensures modules installed
     // post-deploy are restored after a restage
