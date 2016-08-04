@@ -1,0 +1,33 @@
+{
+  "name": "pi-node-red",
+  "version": "0.0.1",
+  "description": "Base Node-RED template",
+  "author": {
+    "name": "Ozzie Gurkan",
+    "url": "http://numikan.tumblr.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ozzieg/pi-node-red.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-red": "0.x",
+    "when": "~3.x",
+    "suncalc": "^1.6.0",
+    "node-prowl": "^0.1.7",
+    "node-red-node-mongodb": "0.x",
+    "node-red-contrib-librato": "3.0.2",
+    "node-red-contrib-slack": "0.x",
+    "node-red-contrib-particle": "./nodes/node-red-contrib-particle",
+    "node-red-node-prowl": "^0.0.4",
+    "node-red-node-pusher": "^0.0.3",
+    "node-red-node-suncalc": "^0.0.6",
+    "node-red-node-web-nodes": "^0.2.0",
+    "node-red-node-random": "^0.0.6",
+    "node-red-node-pushbullet": "^0.0.x"
+  },
+  "scripts": {
+    "start": "node --max-old-space-size=384 node_modules/node-red/red.js -v --settings ./settings.js"
+  }
+}
