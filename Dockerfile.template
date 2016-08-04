@@ -21,12 +21,7 @@ COPY . /app
 
 # This install npm dependencies on the resin.io build server,
 # making sure to clean up the artifacts it creates in order to reduce the image size.
-RUN git clone https://github.com/mongodb/js-bson.git
-RUN cd js-bson
-RUN npm install -g
-RUN node-gyp rebuild
-RUN cd ..
-RUN npm install --unsafe-perm && rm -rf /tmp/*
+RUN git clone https://github.com/mongodb/js-bson.git && cd js-bson && npm install && cd .. && npm install --unsafe-perm && rm -rf /tmp/*
 
 # Enable systemd init system in container
 ENV INITSYSTEM=on
