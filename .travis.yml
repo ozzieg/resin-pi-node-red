@@ -8,4 +8,4 @@ script:
   - git remote add resin $RESIN_REMOTE
   - git remote add resin-staging $RESIN_REMOTE_STAGING
   - git push resin-staging master
-  - git push resin production:master
+  - git push resin production
