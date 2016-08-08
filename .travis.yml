@@ -5,6 +5,5 @@ script:
   - chmod 0600 id_rsa
   - ssh-add ./id_rsa
   - cat resinkey >> ~/.ssh/known_hosts
-  - git remote add resin $RESIN_REMOTE
   - git remote add resin-staging $RESIN_REMOTE_STAGING
   - git push resin-staging master
